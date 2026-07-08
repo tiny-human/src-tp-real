@@ -45,6 +45,11 @@ function get_all_departments()
     return get_all_lines($sql);
 }
 
+function get_departments_tri(){
+    $sql = "SELECT * FROM departments ORDER BY dept_name ASC";
+    return get_all_lines($sql);
+}
+
 function get_jobs_stats()
 {
     // Statistiques par emploi (titre actuel) :
